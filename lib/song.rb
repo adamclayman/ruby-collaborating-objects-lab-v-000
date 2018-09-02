@@ -6,6 +6,7 @@ class Song
   end
 
   def self.new_by_filename(filename)
+    # artist_name - name - genre.mp3
     data_raw = filename.split(".mp3")
     data = data_raw[0].split(" - ")
     song = Song.new(data[1])
