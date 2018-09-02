@@ -11,5 +11,6 @@ class Song
     song.artist = data[0]
     song.artist.songs << song
     song.genre = data[2]
+    song
   end
 end
